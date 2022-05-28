@@ -1,0 +1,170 @@
+.manage {
+  width: 100%;
+  height: 80vh;
+  background-color: white;
+  position: relative;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.manage-overlay {
+  background-color: #a79396;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 36%;
+  height: 80vh;
+  z-index: -1;
+}
+.straighth1::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  bottom: 50%;
+  right: -200%;
+  width: 36vh;
+  height: 0.2%;
+  z-index: -1;
+}
+.straighth1::after {
+  content: "";
+  background-color: black;
+  position: absolute;
+  top: 50%;
+  left: -200%;
+  width: 36vh;
+  height: 0.2%;
+  z-index: -1;
+}
+.straighth1 {
+  font-family: verdana;
+  transform: rotate(90deg);
+  font-size: 15px;
+  padding: 20px;
+  position: relative;
+  top: 0;
+  left: 80%;
+  z-index: 1;
+}
+.manage-container {
+  width: 70%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.manage .img {
+  width: 60%;
+  height: 60vh;
+  overflow: hidden;
+}
+
+.manage-image1,
+.manage-image2,
+.manage-image3 {
+  margin-left: 20px;
+  margin-right: 20px;
+  position: relative;
+}
+.manage-image1::before {
+  content: "";
+  position: absolute;
+  height: 10vh;
+  width: 1.3%;
+  top: 52%;
+  left: 50%;
+  background-color: black;
+}
+.manage-image2::before {
+  content: "";
+  position: absolute;
+  height: 10vh;
+  width: 1.3%;
+  top: 60%;
+  left: 50%;
+  background-color: black;
+}
+.manage-image3::before {
+  content: "";
+  position: absolute;
+  height: 10vh;
+  width: 1.3%;
+  top: 73%;
+  left: 50%;
+  background-color: black;
+}
+.manage-image1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.manage-image2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.manage-image3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.manage img {
+  width: 120%;
+}
+.manage p {
+  font-size: 15px;
+  margin-top: 15%;
+}
+@media (max-width: 800px) {
+  .manage-image1 {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .manage-image2 {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .manage-image3 {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .manage-image1,
+  .manage-image2,
+  .manage-image3 {
+    margin-left: 0px;
+    margin-right: 0px;
+    left: -30%;
+    top: 0%;
+    position: relative;
+  }
+  .manage-image1::before,
+  .manage-image2::before,
+  .manage-image3::before {
+    display: none;
+  }
+  .manage-container {
+    width: 150%;
+    justify-content: center;
+    align-items: center;
+  }
+  .manage .img {
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+  }
+  .manage img {
+    width: 300%;
+  }
+}
+@media (max-width: 1200px) {
+  .manage-image1::before,
+  .manage-image2::before,
+  .manage-image3::before {
+    display: none;
+  }
+}

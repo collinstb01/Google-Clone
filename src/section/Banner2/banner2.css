@@ -1,0 +1,92 @@
+.banner2 {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../images/3.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: -1;
+  overflow: hidden;
+}
+.banner2-container2 {
+  height: fit-content;
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(236, 217, 241, 0.671);
+}
+.banner2 span {
+  text-align: center;
+  font-family: verdana;
+  font-size: 30px;
+}
+.banner2 p {
+  text-align: center;
+  font-family: verdana;
+  font-size: 14px;
+}
+input {
+  padding: 12px 5px;
+  background-color: white;
+  outline: none;
+  border: none;
+  margin-right: 10px;
+}
+.banner2-form .input {
+}
+.banner2 h1 {
+  font-weight: 700;
+}
+
+.banner2 .straighth2::before {
+  content: "";
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  right: 90%;
+  width: 30vh;
+  height: 0.2vh;
+  z-index: -1;
+}
+.banner2 .straighth2::after {
+  content: "";
+  background-color: white;
+  position: absolute;
+  bottom: 50%;
+  left: 90%;
+  width: 60vh;
+  height: 0.2vh;
+  z-index: -1;
+}
+.banner2 .straighth2 {
+  font-family: verdana;
+  transform: rotate(90deg);
+  font-size: 15px;
+  padding: 20px;
+  position: relative;
+  top: 30%;
+  left: -66%;
+  color: white;
+}
+@media (max-width: 700px) {
+  .banner2 span {
+    text-align: center;
+    font-family: verdana;
+    font-size: 20px;
+  }
+  .banner2 p {
+    text-align: center;
+    font-family: verdana;
+    font-size: 12px;
+  }
+  .banner2-container2 {
+    max-width: 70%;
+  }
+}
+@media (max-width: 500px) {
+}

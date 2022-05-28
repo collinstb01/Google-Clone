@@ -1,0 +1,42 @@
+.about {
+  height: 40vh;
+  width: 100%;
+}
+.about-container {
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.about-left h1 {
+  line-height: 0px;
+  font-size: 60px;
+}
+.about-left .about-lefth1 {
+  margin-bottom: -7px;
+  margin-right: 32px;
+}
+.about-left .about-lefth2 {
+  margin-bottom: -7px;
+  margin-right: 16px;
+}
+.about-left .about-lefth3 {
+  margin-bottom: -7px;
+}
+.about-right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 20px;
+}
+.about-p {
+  max-width: 70%;
+}
