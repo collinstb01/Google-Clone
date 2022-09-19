@@ -1,28 +1,25 @@
 import React from 'react'
-import About from '../section/about/About'
-import Banner from '../section/banner/Banner'
-import Hero from '../section/hero/hero'
-import Management from '../section/management/management'
-import Navbar from '../section/navbar/navbar'
-import Banner2 from '../section/Banner2/Banner2'
-import Insta from '../section/insta/Insta'
-import Footer from '../section/footer/Footer'
-import "./stylehome.css"
+import SearchInput from '../components/SearchInput'
+import img from "../asset/logo.png"
+import styled from 'styled-components'
+import UserIcons from '../components/UserIcons'
 
 const Home = () => {
-    return (
-        <div className='home'>
-            <div className="overlay"></div>
-            < Navbar />
-            < Hero />
-            <Banner />
-            < Management />
-            < About />
-            <Banner2 />
-            <Insta />
-            <Footer />
+  return (
+    <Main className='flex h-screen items-center flex-col'>
+        <div className='item flex'>
+           <UserIcons />
         </div>
-    )
+        <img src={img} className="w-72 mt-20 mb-" />
+        <SearchInput />
+    </Main>
+  )
 }
 
 export default Home
+
+const Main = styled.div`
+
+
+
+`
